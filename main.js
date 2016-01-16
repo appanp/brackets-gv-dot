@@ -12,7 +12,7 @@ define(function (require, exports, module) {
 	var LanguageManager = brackets.getModule("language/LanguageManager");
 	var CodeMirror = brackets.getModule("thirdparty/CodeMirror2/lib/codemirror");
 
-	CodeMirror.defineMode("Dot", function () {
+	CodeMirror.defineMode("dot", function () {
 
 		// Load Modules
 		var ExtensionUtils = brackets.getModule("utils/ExtensionUtils");
@@ -93,12 +93,12 @@ define(function (require, exports, module) {
 	});
 
 
-	CodeMirror.defineMIME("text/vnd.graphviz", "Dot");
+	CodeMirror.defineMIME("text/vnd.graphviz", "dot");
 
 	// Register with Brackets
-	LanguageManager.defineLanguage("Dot", {
+	LanguageManager.defineLanguage("dot", {
 		name: "Dot",
-		mode: "Dot",
+		mode: "dot",
 		fileExtensions: ["dot", "gv"],
 		blockComment: ["/*", "*/"],
 		lineComment: ["//"]

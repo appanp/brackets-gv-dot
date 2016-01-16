@@ -1,0 +1,30 @@
+/* gv-dot syntax highlighter css */
+
+.cm-program_start {
+	color: lime;
+}
+
+.cm-keyword {
+	color: orange;
+}
+
+.cm-attr_graph {
+	color: aquamarine;
+}
+
+.cm-attr_node {
+	color: bisque;
+}
+
+.cm-attr_edge {
+	color: darkcyan;
+}
+
+.cm-attr_value {
+	color: cadetblue;
+}
+
+.cm-identifier {
+	color: darkgreen;
+	font-weight: bold;
+}
